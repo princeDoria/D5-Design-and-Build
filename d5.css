@@ -84,18 +84,6 @@ header{
     position: relative;
     vertical-align: top;
 }
-#bgText{
-    position: absolute;
-    left: 50%;
-    top: 65vh;
-    transform: translate(-50%);
-    color: white;
-    background-color: rgb(0, 0, 0, 0.4);
-    font-weight: bold;
-    font-size: 2vw;
-    padding: 10px;
-    border-radius: 5px;
-}
 .content{ /*-----------------------------------------Projects--*/
     display: flex;
     /*float: left;*/
