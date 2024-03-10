@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Prince Joseph Doria">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>D5 Design & Build | Contact</title>
+        <link rel="stylesheet" href="d5.css">
+        <script type="text/javascript" src="d5Script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="home.html"><img src="img/logo.png"></a>
+            </div>
+            <div id="navigation">
+                <nav>
+                    <ul>
+                        <a href="home.html" class="navLink"><li>Home</li></a>
+                        <a href="projects.html" class="navLink"><li>Projects</li></a>
+                        <a href="aboutUs.html" class="navLink"><li>About Us</li></a>
+                        <a href="contact.html" class="navLink"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="contactMain">
+            <div id="contactDiv">
+                <div id="contactImg">
+                    <img src="img/contactUs.png">
+                </div>
+                <div id="contactTable">
+                    <table>
+                        <tr>
+                            <th><img src="img/contactLogo1.png" class="contactLogo"></th>
+                            <td><p class="contactText" onclick="copyText(this)">(+63)9274698043 - GLOBE</p></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/contactLogo1.png" class="contactLogo"></th>
+                            <td><p class="contactText" onclick="copyText(this)">(+63)9163335902 - GLOBE</p></td>
+                            <td class="fb"><img src="img/followUs.png"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/contactLogo1.png" class="contactLogo"></th>
+                            <td><p class="contactText" onclick="copyText(this)">(+63)9328827778 - SMART/SUN</p></td>
+                            <td class="fb">
+                                <a href="https://www.facebook.com/profile.php?id=61550999264410" target="_blank">
+                                <img src="img/fb.png" id="fbLogo"></a></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/contactLogo2.png" class="contactLogo"></th>
+                            <td><p class="contactText" onclick="copyText(this)">(082)2250502</p></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/contactLogo3.png" class="contactLogo"></th>
+                            <td><p class="contactText" onclick="copyText(this)">d5designandbuild2023@gmail.com</p></td>
+                            <td><button type="button" class="formBtns" id="formPop">E-Mail Us</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="popContainer" id="emailContainer">
+                <div id="emailTable">
+                    <table>
+                        <form action="mailto:d5designandbuild2023@gmail.com" method="post" enctype="text/plain">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><button type="button" class="formBtns" id="closeForm">X</button></td>
+                            </tr>   
+                            <tr>
+                                <td><label for="name">Name:</label></td>
+                                <td><input type="text" id="name" placeholder="Enter Your Name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">E-Mail:</label></td>
+                                <td><input type="email" id="email" placeholder="Enter Your E-Mail" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="message">Message:</label></td>
+                                <td><textarea id="message" placeholder="Type Your Message" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="submit" class="formBtns" id="send">Send</button>
+                                    <button type="reset" class="formBtns" id="reset">Reset</button>
+                                </td>
+                            </tr>
+                        </form>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footerDiv">
+                <img src="img/logoFooter1.png" class="logoFooter1">
+                <img src="img/logoFooter2.png" class="logoFooter2">
+            </div>
+        </footer>
+    </body>
+</html>

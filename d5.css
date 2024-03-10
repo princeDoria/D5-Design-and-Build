@@ -1,0 +1,361 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+main{
+    flex: 1;
+    overflow: auto;
+}
+button{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1vw;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0, 0);
+}
+/*--------------Header------------------*/
+header{
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+#logo{
+    width: 40%;
+    margin: auto;
+}
+#logo img{
+    width: 60%;;
+    margin-left: 20%;
+}
+#navigation{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.navLink{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    color: black;
+    margin-inline: 1vw;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding: 5px 10px;
+    transition-duration: 0.4s;
+}
+.navLink:hover{
+    background-color: rgb(0, 31, 61, 0.9);
+    color: #fbdc6a;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+/*--------------Footer------------------*/
+.footerDiv{
+    background-color: #001f3d;
+    display: flex;
+    bottom: 0;
+}
+.logoFooter1{
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-right: 0;
+}
+.logoFooter2{
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-left: 0;
+}
+/*--------------Home------------------*/
+.bgPic{ /*-------------------------------------------About-Us--*/
+    width: 100%;
+    position: relative;
+    vertical-align: top;
+}
+#bgText{
+    position: absolute;
+    left: 50%;
+    top: 65vh;
+    transform: translate(-50%);
+    color: white;
+    background-color: rgb(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 10px;
+    border-radius: 5px;
+}
+.content{ /*-----------------------------------------Projects--*/
+    display: flex;
+    /*float: left;*/
+}
+.content div{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+}
+.content p{
+    margin-inline: 10%;
+    padding: 5%;
+    font-size: 2vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;  
+}
+#homeVideo{
+    height: 25%;
+    width: 100%;
+    vertical-align: top;
+}
+/*--------------Projects------------------*/
+#projMain{
+    --projColor: #f8dcbf; 
+    background-color: var(--projColor);
+}
+.content button{
+    margin: 10px;
+    margin-inline: 30px;
+}
+.projBtns{
+    color: #001f3d;
+    border: 2px solid #001f3d;
+}
+.projBtns:hover{
+    background-color: #001f3d;
+    color: var(--projColor);
+    transform: scale(1.1);
+}
+#projTable{
+    border-collapse: collapse;
+}
+.projPic{
+    display: block;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+.projPic:hover{
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+.popContainer{ /*--------------------------------------Contact--*/
+    display: none;
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+#projContent{
+    display: flex;
+    margin: auto;
+    background-color: var(--projColor);
+    max-width: 80%;
+    max-height: 50vh;
+    margin-top: 10%;
+    transform: translate(0, -10%);
+    padding: 50px;
+}
+.projSlideShow {
+    width: 50%;
+    position: relative;
+    margin: auto;
+  }
+.projSlide {
+    display: none;
+}
+.slidePics{
+    width: 100%;
+    height: 50vh;
+    object-fit: contain; 
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 16px;
+    color: #205e9b;
+    font-weight: bold;
+    font-size: xx-large;
+    transition: 0.6s ease;
+}
+.prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#dotContainer{
+    display: flex;
+    position: absolute;
+    left: 25%;
+    bottom: 5%;
+    transform: translate(-50%, -5%);
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #205e9b;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #001f3d;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#projDetails{
+    color: #001f3d;
+    justify-content: center;
+    width: 50%;
+    border-spacing: 10px;
+}
+/*--------------About-US------------------*/
+#aboutDiv{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+}
+#aboutTable td{
+    width: 50%;
+    text-align: justify;
+    padding-inline: 5%;
+}
+#aboutTable th{
+    font-size: x-large;
+    color: #001f3d;
+}
+#ourTeam{
+    display: flex;
+    margin: auto;
+    width: 60%;
+}
+/*--------------Contact------------------*/
+#contactMain{
+    background-color: #f1f1f1;
+}
+#contactDiv{
+    display: flex;
+    margin-top: 5%;
+}
+#contactImg{
+    width: 50%;
+}
+#contactImg img{
+    width: 100%;
+}
+#contactTable{
+    width: 50%;
+    margin-left: 5%;
+    color: #001f3d;
+}
+#contactTable th{
+    width: 10%;
+}
+#contactTable td{
+    font-size: 1vw;
+    padding-left: 5%;
+}
+.contactLogo{
+    width: 100%;
+}
+.contactText{
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.contactText:hover{
+    transform: scale(1.05);
+}
+.fb{
+    width: 30%;
+}
+.fb img{
+    width: 30%;
+    transition-duration: 0.4s;
+}
+#fbLogo:hover{
+    transform: scale(1.1);
+    filter: brightness(90%);
+}
+#emailTable{
+    display: inline-block;
+    margin-top: 10%;
+    background-color: #f1f1f1;
+    text-align: left;
+    border-radius: 10px;
+}
+#emailTable td{
+    padding: 5px;
+}
+#name, #email, #message{
+    width: 250px;
+}
+.formBtns{
+    border: 2px solid #001f3d;
+    color: #001f3d;
+}
+.formBtns:hover{
+    background-color: #001f3d;
+    color: #f1f1f1;
+    transform: scale(1.1);
+}
+#closeForm{
+    margin: 0;
+    padding: 2px 5px;
+}
+#send:hover{
+    background-color: rgb(24, 167, 60);
+    border-color: rgb(24, 167, 60);
+}
+#reset:hover{
+    background-color: red;
+    border-color: red;
+}
+/*--------------Responsive-Adjustment------------------*/
+@media (orientation: portrait){
+    .content{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .content div{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        
+    }
+    .content p{
+        padding: 3%;
+    }
+}

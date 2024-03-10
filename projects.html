@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Prince Joseph Doria">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>D5 Design & Build | Projects</title>
+        <link rel="stylesheet" href="d5.css">
+        <script type="text/javascript" src="d5Script.js" defer></script>
+        <script type="text/javascript" src="d5Sscript2.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="home.html"><img src="img/logo.png"></a>
+            </div>
+            <div id="navigation">
+                <nav>
+                    <ul>
+                        <a href="home.html" class="navLink"><li>Home</li></a>
+                        <a href="projects.html" class="navLink"><li>Projects</li></a>
+                        <a href="aboutUs.html" class="navLink"><li>About Us</li></a>
+                        <a href="contact.html" class="navLink"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="projMain">
+            <div class="content">
+                <button type="button" id="residentialBtn" class="projBtns" onclick="newResidential()">Residential</button>
+                <button type="button" id="commercialBtn" class="projBtns" onclick="newCommercial()">Commercial</button>
+            </div>
+            <table id="projTable">
+                <tr>
+                    <td><img src="img/residential/arrietaLazTerrazas1.jpg" id="r1" class="projPic" onclick="showR1()"></td>
+                    <td><img src="img/residential/bajoDoñaLuisa1.png" id="r2" class="projPic" onclick="showR2()"></td>
+                    <td><img src="img/residential/gabucanRoyalPines1.jpg" id="r3" class="projPic" onclick="showR3()"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/residential/serranoVincentHeights1.jpg" id="r4" class="projPic" onclick="showR4()"></td>
+                </tr>
+            </table>
+            <div class="popContainer" id="projContainer">
+                <div id="projContent">
+                    <div class="projSlideShow">
+                        <div class="projSlide fade">
+                            <img src="img/residential/arrietaLazTerrazas1.jpg" class="slidePics">
+                        </div>
+                        <div class="projSlide fade">
+                            <img src="img/residential/arrietaLazTerrazas2.jpg" class="slidePics">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div id="dotContainer">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                        </div>
+                    </div>
+                    <table id="projDetails">
+                        <tr>
+                            <th>Project:</th>
+                            <td>3-Level Residential Building</td>
+                        </tr>
+                        <tr>
+                            <th>Location:</th>
+                            <td>Las Terrazas, Ma-a, Davao City</td>
+                        </tr>
+                        <tr>
+                            <th>Contract Cost:</th>
+                            <td>To Be Determined</td>
+                        </tr>
+                        <tr>
+                            <th>Date Completed:</th>
+                            <td>To Be Constructed (2024)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" class="projBtns" onclick="closeProj()">Close</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footerDiv">
+                <img src="img/logoFooter1.png" class="logoFooter1">
+                <img src="img/logoFooter2.png" class="logoFooter2">
+            </div>
+        </footer>
+    </body>
+</html>
