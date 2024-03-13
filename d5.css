@@ -50,7 +50,7 @@ header{
     color: black;
     margin-inline: 1vw;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2vw;
     padding: 5px 10px;
     transition-duration: 0.4s;
 }
@@ -244,15 +244,17 @@ header{
     width: 50%;
     text-align: justify;
     padding-inline: 5%;
+    vertical-align: top;
+    font-size: 2vw;
 }
 #aboutTable th{
-    font-size: x-large;
+    font-size: 3vw;
     color: #001f3d;
 }
 #ourTeam{
     display: flex;
     margin: auto;
-    width: 60%;
+    width: 100%;
 }
 /*--------------Contact------------------*/
 #contactMain{
@@ -344,7 +346,7 @@ header{
     .navLink{
         margin: 0;
         padding: 2%;
-        font-size: 10px;
+        font-size: 2vw;
     }
     .content{
         flex-direction: column;
@@ -386,6 +388,12 @@ header{
     }
 }
 @media screen and (max-width: 850px) {
+    #logo img{
+        width: 80%;
+    }
+    .navLink{
+        margin: 0;
+    }
     .projBtns{
         font-size: 1.5vh;
         padding: 1%;
