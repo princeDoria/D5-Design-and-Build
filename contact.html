@@ -7,6 +7,7 @@
         <title>D5 Design & Build | Contact</title>
         <link rel="stylesheet" href="d5.css">
         <script type="text/javascript" src="d5Script.js" defer></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
     </head>
     <body>
         <header>
@@ -65,7 +66,8 @@
             <div class="popContainer" id="emailContainer">
                 <div id="emailTable">
                     <table>
-                        <form action="sendMail.php" method="post">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="2f207eae-ccb1-453a-a819-9b2fa9efebac">
                             <tr>
                                 <td></td>
                                 <td></td>
@@ -83,6 +85,7 @@
                                 <td><label for="message">Message:</label></td>
                                 <td><textarea name="message" id="message" placeholder="Type Your Message" required></textarea></td>
                             </tr>
+                            <div class="h-captcha" data-captcha="true"></div>
                             <tr>
                                 <td></td>
                                 <td>
