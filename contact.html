@@ -68,6 +68,11 @@
                     <table>
                         <form action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="2f207eae-ccb1-453a-a819-9b2fa9efebac">
+                            <input type="hidden" name="subject" value="New Message From Website">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
@@ -85,17 +90,17 @@
                                 <td><label for="message">Message:</label></td>
                                 <td><textarea name="message" id="message" placeholder="Type Your Message" required></textarea></td>
                             </tr>
-                            <div class="h-captcha" data-captcha="true"></div>
                             <tr>
                                 <td></td>
                                 <td>
-                                    <button type="submit" class="formBtns" name="send" id="send">Send</button>
+                                    <button type="submit" class="formBtns" name="send" id="send" onclick="captcha()">Send</button>
                                     <button type="reset" class="formBtns" id="reset">Reset</button>
                                 </td>
                             </tr>
                         </form>
                     </table>
                 </div>
+                <div class="h-captcha" data-captcha="true"></div>
             </div>
         </main>
         <footer>

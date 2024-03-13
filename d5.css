@@ -343,6 +343,10 @@ header{
     background-color: red;
     border-color: red;
 }
+.h-captcha{
+    display: none;
+    margin: auto;
+}
 /*--------------Responsive-Adjustment------------------*/
 @media (orientation: portrait){
     /*-------------------Home--------------------------*/
