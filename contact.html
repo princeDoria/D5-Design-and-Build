@@ -66,13 +66,9 @@
             <div class="popContainer" id="emailContainer">
                 <div id="emailTable">
                     <table>
-                        <form action="https://api.web3forms.com/submit" method="POST">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
                             <input type="hidden" name="access_key" value="2f207eae-ccb1-453a-a819-9b2fa9efebac">
                             <input type="hidden" name="subject" value="New Message From Website">
-                            <tr>
-                                <td></td>
-                                <td></td>
-                            </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
@@ -80,27 +76,28 @@
                             </tr>   
                             <tr>
                                 <td><label for="name">Name:</label></td>
-                                <td><input type="text" name="name" id="name" placeholder="Enter Your Name" required></td>
+                                <td colspan="2"><input type="text" name="name" id="name" placeholder="Enter Your Name" required></td>
                             </tr>
                             <tr>
                                 <td><label for="email">E-Mail:</label></td>
-                                <td><input type="email" name="email" id="email" placeholder="Enter Your E-Mail" required></td>
+                                <td colspan="2"><input type="email" name="email" id="email" placeholder="Enter Your E-Mail" required></td>
                             </tr>
                             <tr>
                                 <td><label for="message">Message:</label></td>
-                                <td><textarea name="message" id="message" placeholder="Type Your Message" required></textarea></td>
+                                <td colspan="2"><textarea name="message" id="message" placeholder="Type Your Message" required></textarea></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>
-                                    <button type="submit" class="formBtns" name="send" id="send" onclick="captcha()">Send</button>
+                                <td colspan="3"><div class="h-captcha" data-captcha="true"></div></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: center;">
+                                    <button type="submit" class="formBtns" name="send" id="send">Send</button>
                                     <button type="reset" class="formBtns" id="reset">Reset</button>
                                 </td>
                             </tr>
                         </form>
                     </table>
                 </div>
-                <div class="h-captcha" data-captcha="true"></div>
             </div>
         </main>
         <footer>

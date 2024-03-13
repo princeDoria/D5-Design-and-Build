@@ -319,7 +319,7 @@ header{
     padding: 5px;
 }
 #name, #email, #message{
-    width: 100%;
+    width: 95%;
 }
 .formBtns{
     border: 2px solid #001f3d;
@@ -342,10 +342,6 @@ header{
 #reset:hover{
     background-color: red;
     border-color: red;
-}
-.h-captcha{
-    display: none;
-    margin: auto;
 }
 /*--------------Responsive-Adjustment------------------*/
 @media (orientation: portrait){
