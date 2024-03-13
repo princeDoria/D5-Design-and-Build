@@ -65,28 +65,28 @@
             <div class="popContainer" id="emailContainer">
                 <div id="emailTable">
                     <table>
-                        <form action="mailto:d5designandbuild2023@gmail.com" method="post" enctype="text/plain">
+                        <form action="sendMail.php" method="post" netlify>
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td><button type="button" class="formBtns" id="closeForm">X</button></td>
+                                <td><button type="reset" class="formBtns" id="closeForm">X</button></td>
                             </tr>   
                             <tr>
                                 <td><label for="name">Name:</label></td>
-                                <td><input type="text" id="name" placeholder="Enter Your Name" required></td>
+                                <td><input type="text" name="name" id="name" placeholder="Enter Your Name" required></td>
                             </tr>
                             <tr>
                                 <td><label for="email">E-Mail:</label></td>
-                                <td><input type="email" id="email" placeholder="Enter Your E-Mail" required></td>
+                                <td><input type="email" name="email" id="email" placeholder="Enter Your E-Mail" required></td>
                             </tr>
                             <tr>
                                 <td><label for="message">Message:</label></td>
-                                <td><textarea id="message" placeholder="Type Your Message" required></textarea></td>
+                                <td><textarea name="message" id="message" placeholder="Type Your Message" required></textarea></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td>
-                                    <button type="submit" class="formBtns" id="send">Send</button>
+                                    <button type="submit" class="formBtns" name="send" id="send">Send</button>
                                     <button type="reset" class="formBtns" id="reset">Reset</button>
                                 </td>
                             </tr>

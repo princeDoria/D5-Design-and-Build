@@ -6,7 +6,7 @@ document.getElementById("formPop").addEventListener("click", function(){
 document.getElementById("closeForm").addEventListener("click", function(){
     document.getElementById("emailContainer").style.display = "none";
 })
-//copy text from p
+//copy text from contact list
 function copyText(clickedElement){
     var textToCopy = clickedElement.innerText;
     if(textToCopy.charAt(1) !== "+"){
