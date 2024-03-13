@@ -86,7 +86,6 @@ header{
 }
 .content{ /*-----------------------------------------Projects--*/
     display: flex;
-    /*float: left;*/
 }
 .content div{
     width: 50%;
@@ -109,14 +108,14 @@ header{
 #projMain{
     --projColor: #f8dcbf; 
     background-color: var(--projColor);
-}
-.content button{
-    margin: 10px;
-    margin-inline: 30px;
+    max-width: 100%;
 }
 .projBtns{
+    margin: 15px;
+    margin-right: 5%;
     color: #001f3d;
     border: 2px solid #001f3d;
+    font-weight: 1000;
 }
 .projBtns:hover{
     background-color: #001f3d;
@@ -126,11 +125,21 @@ header{
 #projTable{
     border-collapse: collapse;
 }
+#mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 33%;
+    max-width: 33%;
+    margin: auto;
+}
 .projPic{
     display: block;
     margin: auto;
-    width: 95%;
-    padding: 10px;
+    width: 90%;
+    padding-inline: 5px;
+    padding-bottom: 10%;
     cursor: pointer;
     transition: transform .3s ease;
 }
@@ -152,16 +161,17 @@ header{
 }
 #projContent{
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     background-color: var(--projColor);
     max-width: 80%;
-    max-height: 50vh;
+    max-height: 80%;
     margin-top: 10%;
     transform: translate(0, -10%);
-    padding: 50px;
+    padding: 5%;
 }
 .projSlideShow {
-    width: 50%;
+    flex: 60%;
     position: relative;
     margin: auto;
   }
@@ -196,13 +206,6 @@ header{
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
-#dotContainer{
-    display: flex;
-    position: absolute;
-    left: 25%;
-    bottom: 5%;
-    transform: translate(-50%, -5%);
-}
 .dot {
     cursor: pointer;
     height: 15px;
@@ -227,8 +230,9 @@ header{
 #projDetails{
     color: #001f3d;
     justify-content: center;
-    width: 50%;
+    flex: 40%;
     border-spacing: 10px;
+    font-size: 2vh;
 }
 /*--------------About-US------------------*/
 #aboutDiv{
@@ -333,6 +337,15 @@ header{
 }
 /*--------------Responsive-Adjustment------------------*/
 @media (orientation: portrait){
+    /*-------------------Home--------------------------*/
+    #logo img{
+        width: 100%;
+    }
+    .navLink{
+        margin: 0;
+        padding: 2%;
+        font-size: 10px;
+    }
     .content{
         flex-direction: column;
         justify-content: space-between;
@@ -341,9 +354,50 @@ header{
         width: 100%;
         margin: auto;
         text-align: center;
-        
+        padding-top: 5%;
     }
     .content p{
         padding: 3%;
+    }
+    .projBtns{
+        font-size: 1vh;
+        padding: 1%;
+    }
+    #projContent{
+        transform: none;
+    }
+    .projSlideShow{
+        flex: 100%;
+    }
+    .projSlide{
+        height: 40vh;
+        margin: auto;
+    }
+    .slidePics{
+        height: 100%;
+    }
+    .prev{
+        left: 0;
+        padding-left: 0;
+    }
+    .next{
+        right: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .projBtns{
+        font-size: 1.5vh;
+        padding: 1%;
+    }
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
     }
 }

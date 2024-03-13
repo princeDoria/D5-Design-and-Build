@@ -11,11 +11,11 @@ function showR1(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -55,12 +55,12 @@ function showR2(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -100,12 +100,12 @@ function showR3(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -148,13 +148,13 @@ function showR4(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -191,11 +191,11 @@ function showC1(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -232,11 +232,11 @@ function showC2(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -273,11 +273,11 @@ function showC3(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -326,7 +326,6 @@ function showC4(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
@@ -335,6 +334,7 @@ function showC4(){
                     <span class="dot" onclick="currentSlide(5)"></span>
                     <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -371,11 +371,11 @@ function showC5(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>
@@ -412,11 +412,11 @@ function showC6(){
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
                 <div id="dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
+            </div>
             <table id="projDetails">
                 <tr>
                     <th>Project:</th>

@@ -26,20 +26,24 @@
             </div>
         </header>
         <main id="projMain">
-            <div class="content">
+            <div id="projType">
                 <button type="button" id="residentialBtn" class="projBtns" onclick="newResidential()">Residential</button>
                 <button type="button" id="commercialBtn" class="projBtns" onclick="newCommercial()">Commercial</button>
             </div>
-            <table id="projTable">
-                <tr>
-                    <td><img src="img/residential/arrietaLazTerrazas1.jpg" id="r1" class="projPic" onclick="showR1()"></td>
-                    <td><img src="img/residential/bajoDoñaLuisa1.png" id="r2" class="projPic" onclick="showR2()"></td>
-                    <td><img src="img/residential/gabucanRoyalPines1.jpg" id="r3" class="projPic" onclick="showR3()"></td>
-                </tr>
-                <tr>
-                    <td><img src="img/residential/serranoVincentHeights1.jpg" id="r4" class="projPic" onclick="showR4()"></td>
-                </tr>
-            </table>
+            <div id="mainContainer">
+                <div class="column">
+                    <img src="img/residential/arrietaLazTerrazas1.jpg" id="r1" class="projPic" onclick="showR1()">
+                </div>
+                <div class="column">
+                    <img src="img/residential/bajoDoñaLuisa1.png" id="r2" class="projPic" onclick="showR2()">
+                </div>
+                <div class="column">
+                    <img src="img/residential/gabucanRoyalPines1.jpg" id="r3" class="projPic" onclick="showR3()">
+                </div>
+                <div class="column">
+                    <img src="img/residential/serranoVincentHeights1.jpg" id="r4" class="projPic" onclick="showR4()">
+                </div>
+            </div>
             <div class="popContainer" id="projContainer">
                 <div id="projContent">
                     <div class="projSlideShow">
