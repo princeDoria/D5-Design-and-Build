@@ -235,6 +235,11 @@ header{
     border-spacing: 10px;
     font-size: 2vh;
 }
+#announcement{
+    margin: 5%;
+    text-align: center;
+    font-style: italic;
+}
 /*--------------About-US------------------*/
 #aboutDiv{
     width: 100%;
