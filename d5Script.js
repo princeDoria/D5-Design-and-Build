@@ -101,7 +101,5 @@ function showSlides(n) {
 }
 //clear form
 function clearForm(){
-    var form = document.getElementById("contactForm");
-    form.submit();
-    form.reset();
+    document.getElementById("contactForm").reset();
 }

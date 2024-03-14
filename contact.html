@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="d5.css">
         <script type="text/javascript" src="d5Script.js" defer></script>
     </head>
-    <body>
+    <body onload="clearForm()">
         <header>
             <div id="logo">
                 <a href="home.html"><img src="img/logo.png"></a>
@@ -94,8 +94,8 @@
                             </tr>
                             <tr>
                                 <td colspan="3" style="text-align: center;">
-                                    <button type="button" class="formBtns" id="send" onclick="clearForm()">Send</button>
-                                    <button type="reset" class="formBtns" id="reset">Reset</button>
+                                    <button type="submit" class="formBtns" id="send">Send</button>
+                                    <button type="reset" class="formBtns" id="resetBtn">Reset</button>
                                 </td>
                             </tr>
                         </form>
