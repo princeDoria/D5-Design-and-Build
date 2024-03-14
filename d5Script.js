@@ -99,26 +99,3 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
-//check captcha
-function validateForm() {
-    var captcha = document.querySelector('.h-captcha');
-
-    if (!captcha.hasAttribute('data-h-captcha-response')) {
-        document.getElementById('captcha-error').textContent = "Please complete the captcha.";
-        return false; // Prevent form submission
-    }
-    else{
-        return true;
-    }
-
-    var response = captcha.getAttribute('data-h-captcha-response');
-    if (response === '') {
-        document.getElementById('captcha-error').textContent = "Please complete the captcha.";
-        return false; // Prevent form submission
-    }
-    else{
-        return true;
-    }
-
-    document.getElementById('captcha-error').textContent = ''; // Clear any previous error
-}
