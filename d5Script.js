@@ -101,5 +101,9 @@ function showSlides(n) {
 }
 //clear form
 function clearForm(){
+    if(!window.location.hash.includes("#reloaded")) {
+        window.location.href += "#reloaded";
+        window.location.reload()
+    }
     document.getElementById("contactForm").reset();
 }
