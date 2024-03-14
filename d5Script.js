@@ -99,3 +99,8 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+//clear form
+function clearForm(){
+    var form = document.getElementById("contactForm");
+    form.reset();
+}
