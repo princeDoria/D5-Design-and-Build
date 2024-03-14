@@ -66,7 +66,7 @@
             <div class="popContainer" id="emailContainer">
                 <div id="emailTable">
                     <table>
-                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" onsubmit="validateForm()">
                             <input type="hidden" name="access_key" value="2f207eae-ccb1-453a-a819-9b2fa9efebac">
                             <input type="hidden" name="subject" value="New Message From Website">
                             <tr>
@@ -104,6 +104,7 @@
                         </form>
                     </table>
                 </div>
+                <div id="captcha-error" style="color: red;"></div>
             </div>
         </main>
         <footer>

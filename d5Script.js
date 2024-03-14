@@ -100,15 +100,20 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 //check captcha
-const form = document.getElementById('contactForm');
+function validateForm() {
+    var captcha = document.querySelector('.h-captcha');
 
-form.addEventListener('send', function(e) {
-
-    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-
-    if (!hCaptcha) {
-        e.preventDefault();
-        alert("Please fill out captcha field")
-        return
+    if (!captcha.hasAttribute('data-h-captcha-response')) {
+        document.getElementById('captcha-error').textContent = "Please complete the captcha.";
+        return false; // Prevent form submission
     }
-});
+
+    var response = captcha.getAttribute('data-h-captcha-response');
+    if (response === '') {
+        document.getElementById('captcha-error').textContent = "Please complete the captcha.";
+        return false; // Prevent form submission
+    }
+
+    document.getElementById('captcha-error').textContent = ''; // Clear any previous error
+    return true; // Allow form submission
+}
