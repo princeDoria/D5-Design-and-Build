@@ -107,13 +107,18 @@ function validateForm() {
         document.getElementById('captcha-error').textContent = "Please complete the captcha.";
         return false; // Prevent form submission
     }
+    else{
+        return true;
+    }
 
     var response = captcha.getAttribute('data-h-captcha-response');
     if (response === '') {
         document.getElementById('captcha-error').textContent = "Please complete the captcha.";
         return false; // Prevent form submission
     }
+    else{
+        return true;
+    }
 
     document.getElementById('captcha-error').textContent = ''; // Clear any previous error
-    return true; // Allow form submission
 }
