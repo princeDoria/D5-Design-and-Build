@@ -100,8 +100,11 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 //clear form
+setTimeout(clear, 2000);
 function clearForm(){
     document.getElementById("contactForm").submit();
-    document.getElementById("emailContainer").style.display = "none";
-    document.getElementById("contactForm").reset();
+    setTimeout(function(){
+        document.getElementById("emailContainer").style.display = "none";
+        document.getElementById("contactForm").reset();
+    }, 1000);
 }
