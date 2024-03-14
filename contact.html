@@ -65,7 +65,7 @@
             <div class="popContainer" id="emailContainer">
                 <div id="emailTable">
                     <table>
-                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" onsubmit="clearForm()">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
                             <input type="hidden" name="access_key" value="2f207eae-ccb1-453a-a819-9b2fa9efebac">
                             <input type="hidden" name="subject" value="New Message From Website">
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -94,7 +94,7 @@
                             </tr>
                             <tr>
                                 <td colspan="3" style="text-align: center;">
-                                    <button type="submit" class="formBtns" name="send" id="send">Send</button>
+                                    <button type="button" class="formBtns" id="send" onclick="clearForm()">Send</button>
                                     <button type="reset" class="formBtns" id="reset">Reset</button>
                                 </td>
                             </tr>
