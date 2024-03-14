@@ -102,7 +102,7 @@ function showSlides(n) {
 //check captcha
 const form = document.getElementById('contactForm');
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('send', function(e) {
 
     const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
 
