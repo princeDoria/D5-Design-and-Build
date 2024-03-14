@@ -30,13 +30,13 @@ function newCommercial(){
         <img src="img/commercial/arrietaTulipDrive1.png" id="c1" class="projPic" onclick="showC1()">
     </div>
     <div class="column">
-        <img src="img/commercial/gabucanCTree1.jpg" id="c2" class="projPic" onclick="showC2()">
+        <img src="img/commercial/gabucanCTree1.png" id="c2" class="projPic" onclick="showC2()">
     </div>
     <div class="column">
-        <img src="img/commercial/gabucanFairCrowns1.jpg" id="c3" class="projPic" onclick="showC3()">
+        <img src="img/commercial/gabucanFairCrowns1.png" id="c3" class="projPic" onclick="showC3()">
     </div>
     <div class="column">
-        <img src="img/commercial/serranoCafeChalet1.jpg" id="c4" class="projPic" onclick="showC4()">
+        <img src="img/commercial/serranoCafeChalet1.png" id="c4" class="projPic" onclick="showC4()">
     </div>
     <div class="column">
         <img src="img/commercial/villegasArakanChapel1.png" id="c5" class="projPic" onclick="showC5()">
@@ -52,16 +52,16 @@ function newCommercial(){
 function newResidential(){
     document.getElementById("mainContainer").innerHTML = `
     <div class="column">
-        <img src="img/residential/arrietaLazTerrazas1.jpg" id="r1" class="projPic" onclick="showR1()">
+        <img src="img/residential/arrietaLazTerrazas1.png" id="r1" class="projPic" onclick="showR1()">
     </div>
     <div class="column">
         <img src="img/residential/bajoDoñaLuisa1.png" id="r2" class="projPic" onclick="showR2()">
     </div>
     <div class="column">
-        <img src="img/residential/gabucanRoyalPines1.jpg" id="r3" class="projPic" onclick="showR3()">
+        <img src="img/residential/gabucanRoyalPines1.png" id="r3" class="projPic" onclick="showR3()">
     </div>
     <div class="column">
-        <img src="img/residential/serranoVincentHeights1.jpg" id="r4" class="projPic" onclick="showR4()">
+        <img src="img/residential/serranoVincentHeights1.png" id="r4" class="projPic" onclick="showR4()">
     </div>
     `;
     document.getElementById("projMain").style.setProperty("--projColor", "#f8dcbf");

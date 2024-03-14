@@ -4,10 +4,10 @@ function showR1(){
     newDiv.innerHTML = `
             <div class="projSlideShow">
                 <div class="projSlide fade">
-                    <img src="img/residential/arrietaLazTerrazas1.jpg" class="slidePics">
+                    <img src="img/residential/arrietaLazTerrazas1.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/residential/arrietaLazTerrazas2.jpg" class="slidePics">
+                    <img src="img/residential/arrietaLazTerrazas2.png" class="slidePics">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -90,13 +90,13 @@ function showR3(){
     newDiv.innerHTML = `
             <div class="projSlideShow">
                 <div class="projSlide fade">
-                    <img src="img/residential/gabucanRoyalPines1.jpg" class="slidePics">
+                    <img src="img/residential/gabucanRoyalPines1.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/residential/gabucanRoyalPines2.jpg" class="slidePics">
+                    <img src="img/residential/gabucanRoyalPines2.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/residential/gabucanRoyalPines3.jpg" class="slidePics">
+                    <img src="img/residential/gabucanRoyalPines3.png" class="slidePics">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -135,16 +135,16 @@ function showR4(){
     newDiv.innerHTML = `
             <div class="projSlideShow">
                 <div class="projSlide fade">
-                    <img src="img/residential/serranoVincentHeights1.jpg" class="slidePics">
+                    <img src="img/residential/serranoVincentHeights1.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/residential/serranoVincentHeights2.jpg" class="slidePics">
+                    <img src="img/residential/serranoVincentHeights2.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/residential/serranoVincentHeights3.jpg" class="slidePics">
+                    <img src="img/residential/serranoVincentHeights3.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/residential/serranoVincentHeights4.jpg" class="slidePics">
+                    <img src="img/residential/serranoVincentHeights4.png" class="slidePics">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -225,10 +225,10 @@ function showC2(){
     newDiv.innerHTML = `
             <div class="projSlideShow">
                 <div class="projSlide fade">
-                    <img src="img/commercial/gabucanCTree1.jpg" class="slidePics">
+                    <img src="img/commercial/gabucanCTree1.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/commercial/gabucanCTree2.jpg" class="slidePics">
+                    <img src="img/commercial/gabucanCTree2.png" class="slidePics">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -266,10 +266,10 @@ function showC3(){
     newDiv.innerHTML = `
             <div class="projSlideShow">
                 <div class="projSlide fade">
-                    <img src="img/commercial/gabucanFairCrowns1.jpg" class="slidePics">
+                    <img src="img/commercial/gabucanFairCrowns1.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/commercial/gabucanFairCrowns2.jpg" class="slidePics">
+                    <img src="img/commercial/gabucanFairCrowns2.png" class="slidePics">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -307,22 +307,22 @@ function showC4(){
     newDiv.innerHTML = `
             <div class="projSlideShow">
                 <div class="projSlide fade">
-                    <img src="img/commercial/serranoCafeChalet1.jpg" class="slidePics">
+                    <img src="img/commercial/serranoCafeChalet1.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/commercial/serranoCafeChalet2.jpg" class="slidePics">
+                    <img src="img/commercial/serranoCafeChalet2.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
                     <img src="img/commercial/serranoCafeChalet3.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/commercial/serranoCafeChalet4.jpg" class="slidePics">
+                    <img src="img/commercial/serranoCafeChalet4.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
                     <img src="img/commercial/serranoCafeChalet5.png" class="slidePics">
                 </div>
                 <div class="projSlide fade">
-                    <img src="img/commercial/serranoCafeChalet6.jpg" class="slidePics">
+                    <img src="img/commercial/serranoCafeChalet6.png" class="slidePics">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
