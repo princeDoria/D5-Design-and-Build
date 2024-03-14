@@ -101,5 +101,7 @@ function showSlides(n) {
 }
 //clear form
 function clearForm(){
+    document.getElementById("contactForm").submit();
+    document.getElementById("emailContainer").style.display = "none";
     document.getElementById("contactForm").reset();
 }
